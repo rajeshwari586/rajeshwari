@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1 basic html</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1635e4;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            background: #6075EC;
+            color: white;
+            padding: 30PX;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .box {
+            background: white;
+            width: 600px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #1635e4;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        h1 {
+            color: #1635e4;
+        }
+
+        .button {
+            display: inline-flexbox;
+            background: #1635e4;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgb(252, 248, 7);
+            transition: scale(1.05);
+        }
+
+        .Skills {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .Skills span {
+            background-color: #1635e4;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>Wellcome to My website</b></h1>
+        <p>My Personal Portfolio</p>
+    </header>
+
+    <div class="box">
+        <div class="circle">R</div>
+        <h1>About Me</h1>
+        <p>Hello! My name is <b>Rajeshwari Soni</b>. I am Learning HTML, CSS, JAVASCRIPT and intrested in webdevelopment.</p>
+        <a href="Resume.html" class="button">Learn More</a>
+        <h1>My skills</h1>
+        <div class="Skills">
+             <span>HTML</span>
+             <span>CSS</span>
+             <span>PYTHON</span>
+             <span>JAVASCRIPT</span>
+        </div>
+    </div>
+
+    <footer>
+        @2026 Rajeshwari Soni | My first website
+    </footer>
+</body>
+</html>
