@@ -7,17 +7,19 @@
 
 body{
     font-family: Arial, sans-serif;
-    background: pink;
+    background: azure;
     color: blueviolet;
     line-height: 1.6;
 }
+
+
 
 a{
     text-decoration: upperline;
 }
 
 header{
-    background: #123;
+    background: #222;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -39,7 +41,7 @@ header{
 }
 
  .logo span {
-        color: rgb(6, 9, 39);
+        color: #05345f;
     }
 
     .nav-links{
@@ -64,7 +66,6 @@ header{
         max-width: 1200px;
         margin: auto;
         padding: 60px 30px;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -76,19 +77,19 @@ header{
     }
 
     .hello {
-        color: bisque;
+        color: rgb(233, 11, 148);
         font-size: 20px;
         font-weight: bold;
     }
 
     .home h1 {
          font-size: 55px;
-         color: cadetblue;
+         color: rgb(7, 5, 105);
          margin: 5px 0;
     }
 
     .home h2 {
-        color: aliceblue;
+        color: rgb(0, 0, 0);
         font-size: 28px;
         margin-bottom: 20px;
     }
@@ -104,8 +105,8 @@ header{
 
     .btn {
         display: inline-block;
-        background: rgb(16, 230, 201);
-        color: rgb(248, 11, 110);
+        background: #00bcb4;
+        color: aliceblue;
         padding: 12px 25px;
         border-radius: 6px;
         margin-right: 10px;
@@ -118,7 +119,7 @@ header{
     }
 
     .btn.second {
-        background: rgb(235, 182, 113);
+        background: #00bcb4;
     }
 
     .btn.second:hover {
@@ -148,7 +149,7 @@ header{
         text-align: center;
         font-size: 34px;
         margin-bottom: 54px;
-        color: rgb(50, 83, 146);
+        color: black;
     }
 
     .section-title::after {
@@ -198,10 +199,6 @@ header{
 
     .info p {
         margin: 5px 0;
-    }
-     
-    .skills-section {
-        background: rgb(238, 215, 8);
     }
 
     .skills-container {
@@ -255,7 +252,7 @@ header{
 
     .js {
         width: 70%;
-    }
+    }    
 
     .python {
         width: 76%;
@@ -263,7 +260,6 @@ header{
 
     .project-container {
         display: grid;
-
         grid-template-columns: repeat(3, 1fr);
 
         gap: 30px;
@@ -292,6 +288,7 @@ header{
         margin-bottom: 15px;
     }
 
+   
     .project-card h3 {
         font-size: 22px;
         margin-bottom: 10px;
@@ -307,41 +304,7 @@ header{
         font-weight: bold;
     }
 
-    .education-section {
-        background: rgb(241, 136, 50);
-    }
-
-    .education-container {
-        display: grid;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 30px;
-    }
-
-    .education-card {
-        background: rgb(240, 240, 158);
-
-        padding: 30px;
-
-        border-left: 5px solid rgb(236, 91, 116);
-
-        box-shadow: 0 5px 20px rgb(212, 34, 64);
-    }
-
-    .education-card h3 {
-        margin-bottom: 10px;
-    }
-
-    .education-card p {
-        color: rgb(252, 214, 46);
-    }
-
-    .education-card span {
-        color: rgb(16, 226, 156);
-        font-weight: bold;
-    }
-
+    
     .contact-container {
         display: flex;
         gap: 50px;
@@ -350,6 +313,7 @@ header{
     .contact-info,
     .contact-form {
         flex: 1;
+        background-color: azure;
     }
 
     .contact-info h3 {
@@ -371,37 +335,31 @@ header{
     .contact-form input,
     .contact-form textarea {
         width: 100%;
-
         padding: 14px;
-
-        border: 1px solid rgb(238, 86, 144);
-
+        border: 1px solid rgb(29, 24, 26);
         border-radius: 6px;
-
         font-size: 15px;
-
         outline: none;
+    }
+
+    input, textarea {
+        margin-bottom: 40px;
+        box-shadow: black;
     }
 
     .contact-form input:focus,
     .contact-form textarea:focus {
-        border-color: rgb(80, 41, 67);
+        border-color: rgb(5, 4, 5);
     }
 
     .contact-form button {
         padding: 14px;
-
         border: none;
-
-        background: rgb(243, 224, 113);
-        color: rgb(240, 4, 114);
-
+        background: rgb(69, 127, 194);
+        color: #e3e6e9;
         border-radius: 6px;
-
         font-size: 16px;
-
         cursor: pointer;
-
         transition: 0.3s;
     }
 
@@ -410,12 +368,9 @@ header{
     }
 
     footer {
-        background:rgb(91, 16, 114);
-
+        background:rgb(18, 24, 80);
         color: thistle;
-
         text-align: center;
-
         padding: 35px 20px;
     }
 
@@ -425,7 +380,7 @@ header{
     }
 
     footer p {
-        color: rgb(235, 102, 146);
+        color: rgb(9, 4, 87);
     }
 
     .social {

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 40px;
+         padding: 0;
+         font-family: Arial, sans-serif;
+         background: #eaf4ff;
+         margin-top:24px auto;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         min-height: 75vh;
+      }
+
+      .container {
+         width: 500px;
+         padding: 28px;
+         background-color: aliceblue;
+
+         border: 1px solid #f5faff;
+         border-radius: 12px;
+
+         box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
+      }
+
+      h2{
+         margin-top: 0;
+         margin-bottom: 20px;
+         color: rgb(11, 78, 75);
+         font-size: 25px;
+      }
+
+      label{
+         display: block;
+         margin-bottom: 7px;
+         text-align: start;
+         color: #06161f;
+         font-size: 16px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="Password"],
+      select,
+      textarea {
+         width: 100%;
+         padding: 11px;
+
+         margin-bottom: 16px;
+
+         border: 1px solid #7899b8;
+         border-radius: 2px;
+
+         background-color: #f8fbff;
+         font-size: 15px;
+      }
+
+      .gender {
+         display: flex;
+   
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 16px;
+         
+      }
+
+      .gender input {
+         width: 16px;
+         height: 16px;
+      }
+
+      .gender span {
+         color: #03111b;
+      }
+
+      select {
+         height: 40px;
+      }
+
+      textarea {
+         height: 85px;
+         resize: none;
+      }
+
+      button {
+         width: 100%;
+         padding: 13px;
+
+         border: none;
+         background-color: #00796b;
+         color: white;
+
+         font-size: 15px;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: rgb(199, 161, 231);
+      }
+    </style>
+</head>
+<body>
+     
+      <div class="container">
+
+          <h2>Students Registration</h2>
+
+          <form>
+             <label>Name</label>
+             <input type="text">
+
+             <label>Email</label>
+             <input type="email">
+
+             <label>Password</label>
+             <input type="Password">
+
+             <label>Gender</label>
+             
+             <div class="gender">
+                <input type="radio" name="gender">
+                <span>Male</span>
+             </div>
+
+
+             <div class="gender">
+                <input type="radio">
+                <span>Female</span>
+             </div>
+
+             <label>Course</label>
+             <select>
+                <option>BCA</option>
+                <option>B.tech</option>
+                <option>MCA</option>
+                <option>M.tech</option>
+             </select>
+
+             <label>Address</label>
+             <textarea></textarea>
+
+             <button type="submit">Register</button>
+          </form>
+      </div>
+</body>
+</html>

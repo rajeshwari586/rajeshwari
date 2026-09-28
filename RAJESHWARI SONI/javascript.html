@@ -5,17 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT</title>
 </head>
-<body>
+<body>             
+   
     <h2>javascript</h2>
     <button onclick="ShowMessage()">On click</button>
      
     <script>
-        function ShowMessage(){
+       function ShowMessage(){
             alert("Wellcome to javascript");
         }
         let name="Rajeshwari"
         console.log(name);
-  
+         
+        document.write("Hello ");
+        console.log("Hello")
+        
+        let a = 10;
+        let b = 5;
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+        console.log(a%b);
+
+        letname =prompt("enter your name:");
+        alert("Hello" + name);
+         
+        letname =prompt("enter your name:");
+        document.write(" welcome" + name);
+        
+        let temp =a;
+        a=b;
+        b=temp;
+        console.log(a,b);
+
+        let n =15;
+        
+        if (n % 2==0)
+            console.log("Even"); 
+             else 
+             console.log("odd");
+
+        letname="tanu"; //string:
+        letage =20; //Number
+        letisStudent = true; //boolean 
+        console.log(name,letage,letisStudent);
+
+        let age =21;
+        let price =199.99;
+
+        console.log(age);
+        console.log(price);
+
+        let firstname ="tanu";
+        let city ='Khandwa';
+
+        console.log(firstname);
+        console.log(city);
+
+        let isloggedIN =true;
+        let isAdmin = false;
+
+        console.log(isloggedIN);
+         console.log(isAdmin);
+
+         let score;
+         console.log(score);
+
+         let user =null;
+         console.log(user);
+
+         let A=null;
+         let B;
+         console.log(A);
+         console.log(B);
+
+         let big =122334454566678997766764785986505755555664696210n;
+         console.log(big);
+
+         let id1 = Symbol("id")
+         let id2 = Symbol("id")
+         console.log(id1 == id2);
+
+         let student = {
+            name:"tanu" ,
+            age: 17,
+            course: "BCA"
+         }
+         console.log(student);
+
+         let colors = ["Red" , "Green" , "Blue"];
+         console.log(colors);
+
+         function greet() {
+             console.log("Welcome");
+         };
+         greet();
+
+         console.log(typeof "Hello");
+         console.log(typeof 100);
+         console.log(typeof true);
+         console.log(typeof undefined);
+         console.log(typeof null);
+         console.log(typeof {});
+         console.log(typeof []);
+         console.log(typeof function(){});
+
+        let value = 100;
+        console.log(typeof value);
+        value = "Hello";
+        console.log(typeof value);
+
+        let num = 100;
+        console.log(string(num));
+
+        let text = "200";
+        console.log(string(text));
     </script>
 </body>
 </html>
