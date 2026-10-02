@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Paradise</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #071b70;
+        }
+
+        header {
+            background-color: #071b70;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            color: #ff765f;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 18px;
+        }
+
+        nav a:hover {
+            color: #f12400;
+        }
+
+        .tanu {
+            background-color: #071b70;
+            color: whitesmoke;
+            min-height: 350px;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .tanu-content h3 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .tanu-content p {
+            font-size: 18px;
+        }
+
+        .tanu button {
+            margin-top: 25px;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 25px;
+            background: #eb5f03;
+            color: rgb(245, 234, 252);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .tanu button:hover {
+            background: #f703ba;
+        }
+
+        .menu-section {
+            padding: 55px 30px;
+            text-align: center;
+        }
+
+        .menu-section h2,
+        .about-section h2,
+        .contact-section h2 {
+            font-size: 32px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .Food-card {
+            background: rgb(216, 236, 236);
+            width: 250px;
+            min-height: 250px;
+            padding: 25px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgb(0, 0, 0, 0.12);
+        }
+
+        .Food-card h1 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .Food-card p {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #3b1818;
+        }
+
+        .Food-icon {
+            font-size: 55px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #04112b;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .Food-card button {
+            background-color: #c92e07;
+            color: whitesmoke;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .Food-card button:hover {
+            background: #071b70;
+        }
+
+        .about-section {
+            background-color: rgb(250, 189, 170);
+            text-align: center;
+            padding: 55px 30px;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #e75b7a;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .about-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .contact-section {
+            background-color: #f5f8f5;
+            text-align: center;
+            padding: 55px 30px;
+        }
+
+        .contact-info p {
+            font-size: 17px;
+            margin: 18px;
+        }
+
+        footer {
+            background-color: #00008b;
+            text-align: center;
+            color: whitesmoke;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴Food Paradise</h1>
+        <p>Delicious Food😋 | Great Taste | Happy Moments</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="tanu">
+        <div class="tanu-content">
+            <h3><b>Welcome to Food Paradise</b></h3>
+
+            <p>Enjoy delicious and fresh food with your family and friends.</p>
+
+            <button onclick="goToMenu()">Explore Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <br><br>
+        <div class="line"></div>
+
+        <div class="menu-container">
+
+            <div class="Food-card">
+                <div class="Food-icon">🍕</div>
+                <h1><b>Pizza</b></h1>
+                <p>
+                    Cheesy and delicious Pizza
+                    loaded with fresh toppings
+                </p>
+                <div class="price">₹199</div>
+                <button>Order Now</button>
+            </div>
+
+            <div class="Food-card">
+                <div class="Food-icon">🍔</div>
+                <h1><b>Burger</b></h1>
+                <p>
+                    Fresh and crispy burger with
+                    delicious sauces.
+                </p>
+                <div class="price">₹99</div>
+                <button>Order Now</button>
+            </div>
+
+            <div class="Food-card">
+                <div class="Food-icon">🍝</div>
+                <h1><b>Pasta</b></h1>
+                <p>
+                    Creamy and tasty Pasta
+                    prepared with fresh ingredients.
+                </p>
+                <div class="price">₹149</div>
+                <button>Order Now</button>
+            </div>
+
+            <div class="Food-card">
+                <div class="Food-icon">🍗</div>
+                <h1><b>Fried Chicken</b></h1>
+                <p>
+                    Crispy, spicy and perfectly
+                    cooked fried chicken.
+                </p>
+                <div class="price">₹249</div>
+                <button>Order Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <br><br>
+
+        <div class="about-content">
+            <p>
+                Welcome to <b>Food Paradise</b>. We are a family-friendly
+                restaurant serving delicious and freshly prepared food.
+            </p>
+
+            <p>
+                Our goal is to provide great taste, quality ingredients
+                and a wonderful dining experience for everyone.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <br><br>
+
+        <div class="contact-info">
+            <p>📭 Raipur, Chhattisgarh</p>
+            <p>📞 +91 8103346046</p>
+            <p>📧 foodparadise@gmail.com</p>
+            <button>Call Now</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Food Paradise | All Rights Reserved
+    </footer>
+
+    <script>
+        function goToMenu() {
+            document.getElementById("menu").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+</html>
